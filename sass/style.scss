@@ -1,0 +1,61 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Theme Name: 	
+Version:        1.0.0
+Author:         themexriver
+URL:            http://themeforest.net/user/themexriver
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#0.1	Theme Reset Style
+#0.2	Global Elements
+#0.3	header
+#0.4	hero-slider
+#0.5	footer
+#0.6	wedding-couple-section
+#0.7	count-down-section 
+#0.8	story-section
+#0.9	cta
+#1.0	events-section
+#1.1	inportant-people-section
+#1.2	gallery-section
+#1.3	rsvp-section
+#1.4	getting-there-section
+#1.5	gift-registration-section
+
+----------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+// base
+@import "base/base";
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/social-links";
+@import "components/page-title";
+@import "components/preloader";
+@import "components/blog-sidebar";
+
+// layout
+@import "layout/header";
+@import "layout/hero-slider";
+@import "layout/footer";
+
+// components
+@import "components/sticky-header";
+
+// page
+@import "page/home-default";
+@import "page/blog";
+@import "page/blog-details";
+
+

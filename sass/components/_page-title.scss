@@ -1,0 +1,92 @@
+.page-title {
+	@include background-style("../images/page-title.jpg", center center, cover, no-repeat, local);
+	height: 300px;
+	text-align: center;
+	position: relative;
+	display: table;
+	width: 100%;
+
+	@include media-query(1199px) {
+		height: 250px;
+	}
+
+	&:before {
+		content: "";
+		@include overlay(transparentize($black, 0.2));
+	}
+
+	.container {
+		width: 100%;
+		vertical-align: middle;
+		display: table-cell;
+	}
+
+	h2,
+	ol {
+		color: $white;
+	}
+
+	h2 {
+		font-size: 55px;
+		font-size: calc-rem-value(55);
+		font-weight: 600;
+		margin: 0 0 0.5em;
+		text-transform: uppercase;
+
+		@include media-query(1199px) {
+			font-size: 45px;
+			font-size: calc-rem-value(45);
+		}
+
+		@include media-query(767px) {
+			font-size: 40px;
+			font-size: calc-rem-value(40);
+		}
+	}
+
+	.breadcrumb {
+		background-color: transparent;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+
+		a {
+			color: $white;
+		}
+
+		ul {
+			display: inline-block;
+		}
+
+		ul li {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+			color: $theme-primary-color;
+			float: left;
+			position: relative;
+
+			@include media-query(1199px) {
+				font-size: 16px;
+				font-size: calc-rem-value(16);
+			}
+		}
+
+		ul > li + li {
+			padding-left: 20px;
+			margin-left: 20px;
+
+			@include media-query(1199px) {
+				padding-left: 15px;
+				margin-left: 15px;
+			}
+		}
+
+		ul > li + li:before {
+			content: "/";
+			position: absolute;
+			left: -5px;
+			top: 2px;
+			color: $white;
+		}
+	}
+}

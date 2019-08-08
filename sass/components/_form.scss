@@ -1,0 +1,33 @@
+.form {
+    input,
+    textarea,
+    select {
+        border-color: lighten( $black, 75% );
+        border-radius: 0;
+        outline: 0;
+        box-shadow: none;
+        color: lighten($black, 35%);
+
+        &:focus {
+            border-color: $theme-primary-color;
+            @include round-box-shadow( lighten($theme-primary-color, 10%), 5px, 0 );
+        }
+    }
+
+    @include placeholder-style(lighten($black, 35%));
+
+    select {
+        background: url(../images/select-icon.png) no-repeat right center;
+        display: inline-block;
+        -webkit-appearance:none;
+        -moz-appearance:none;
+        -ms-appearance:none;
+        appearance:none;
+        cursor:pointer;
+    }
+    
+    select::-ms-expand { /* for IE 11 */
+        display: none;
+    }
+
+}

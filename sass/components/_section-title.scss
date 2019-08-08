@@ -1,0 +1,154 @@
+.section-title {
+	text-align: center;
+	margin-bottom: 60px;
+	position: relative;
+	
+	@include media-query(767px) {
+		margin-bottom: 50px;
+	}
+
+	.vertical-line {
+		width: 18px;
+		height: 42px;
+		top: 0;
+
+		@include media-query(991px) {
+			height: 35px;
+		}
+
+		&,
+		span {
+			position: absolute;
+			left: 50%;
+			@include translatingX();
+		}
+
+		span {
+			background: transparentize($theme-primary-color, 0.8);
+			width: 2px;
+			height: 42px;
+			top: 17px;
+
+			@include media-query(991px) {
+				height: 35px;
+			}
+
+			@include media-query(767px) {
+				height: 30px;
+				top: 15px;
+			}
+
+			i {
+				position: absolute;
+				left: -34px;
+				top: -63px;
+
+				@include media-query(991px) {
+					left: -28px;
+					top: -54px;
+				}
+			}
+
+			i:before {
+				margin: 0;
+				font-size: 65px;
+				font-size: calc-rem-value(65);
+				color: $theme-primary-color;
+				opacity: 0.6;
+
+				@include media-query(991px) {
+					font-size: 55px;
+					font-size: calc-rem-value(55);
+				}
+			}
+		}
+
+		&:before {
+			content: "";
+			background: transparentize($theme-primary-color, 0.8);
+			width: 45px;
+			height: 2px;
+			top: 16px;
+			position: absolute;
+			left: 50%;
+			@include translatingX();
+
+			@include media-query(991px) {
+				width: 40px;
+				height: 2px;
+			}
+		}
+	}
+
+	h2 {
+		font-family: $heading-font;
+		background-color: transparentize($theme-primary-color, 0.9);
+		font-size: 46px;
+		font-size: calc-rem-value(46);
+		color: #848383;
+		margin: 59px 0 0;
+		padding: 10px 25px 5px;
+		border-top: 2px solid transparentize($theme-primary-color, 0.9);
+		border-bottom: 2px solid transparentize($theme-primary-color, 0.9);
+		display: inline-block;
+		text-transform: capitalize;
+		letter-spacing: 3px;
+
+		@include media-query(1199px) {
+			font-size: 40px;
+			font-size: calc-rem-value(40);
+		}
+
+		@include media-query(991px) {
+			font-size: 35px;
+			font-size: calc-rem-value(35);
+			margin-top: 52px;
+		}
+
+		@include media-query(767px) {
+			font-size: 30px;
+			font-size: calc-rem-value(30);
+			padding: 8px 10px 3px;
+			letter-spacing: 1px;
+		}
+
+		@include media-query(767px) {
+			margin-top: 45px;
+		}
+	}
+}
+
+
+.section-title-white {
+	@extend .section-title;
+
+	.vertical-line {
+
+		span {
+			background: transparentize($white, 0.8);
+
+			i:before {
+				margin: 0;
+				font-size: 65px;
+				color: $white;
+				opacity: 0.4;
+			}
+		}
+
+		&:before,
+		&:after {
+			background: transparentize($white, 0.8);
+		}
+
+		&:after {
+			background: $white;
+		}
+	}
+
+	h2 {
+		color: $white;
+		background-color: transparentize($white, 0.9);
+		border-top: 2px solid transparentize($white, 0.9);
+		border-bottom: 2px solid transparentize($white, 0.9);
+	}
+}

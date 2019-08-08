@@ -1,0 +1,281 @@
+/*--------------------------------------------------------------
+#0.1    Theme Reset Style
+--------------------------------------------------------------*/
+html {
+    font-size: $base-font-size + px;
+}
+
+
+body {
+    font-family: $base-font;
+    background-color: $body-bg-color;
+    font-size: $base-font-size + px;
+    font-size: calc-rem-value($base-font-size);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+
+    @include media-query(1199px) {
+        font-size: 17px;
+        font-style: calc-rem-value(17);
+    }
+
+    @include media-query(991px) {
+        font-size: 16px;
+        font-style: calc-rem-value(16);
+    }
+}
+
+p {
+    color: $text-color;
+    line-height: 1.8em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $heading-color;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    @include transition-time(0.2s);
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+
+
+
+/*--------------------------------------------------------------
+#0.2    Global Elements
+--------------------------------------------------------------*/
+.page-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.wow {
+    visibility: hidden;
+}
+
+.fi:before {
+    margin: 0;
+}
+
+.section-padding {
+    padding: 120px 0;
+
+    @include media-query(1199px) {
+        padding: 100px 0;
+    }
+
+    @include media-query(991px) {
+        padding: 80px 0;
+    }
+}
+
+
+/** for popup image ***/
+.mfp-wrap {
+    background-color: transparentize($black, 0.1);
+    z-index: 99999;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+.mfp-iframe-holder {
+    background: lighten($black, 10%);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+/*** for fancybox video ***/
+.fancybox-overlay {
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 9999 !important;
+}
+
+.fancybox-wrap {
+  z-index: 99999 !important;
+}
+
+/*** validate rsvp form ***/
+.validate-rsvp-form {
+
+    .success-error-message {
+        margin: 15px 0 0;
+    }
+
+    label.error {
+        color: red;
+        margin: 5px 0 0 0;
+    }
+
+    #loader {
+        display: none;
+
+        i {
+            font-size: 20px;
+            color: $white;
+        }
+    }
+
+    #success,
+    #error {
+        width: 100%;
+        color: $white;
+        padding: 5px 10px;
+        font-size: 16px;
+        text-align: center;
+        display: none;
+
+        @include media-query(767px)  {
+            font-size: 15px;
+        }
+    }
+
+    #success {
+        background-color: green;
+        margin-bottom: 5px;
+    }
+
+    #error {
+        background-color: red;
+    }
+}
+
+/*** music box ***/
+.music-box {
+    position: fixed;
+    width: 300px;
+    height: 160px;
+    z-index: 120;
+    bottom: 30px;
+    right: 30px;
+
+    @include media-query(991px) {
+        width: 250px;
+        height: 120px;
+        right: auto;
+        left: 30px;
+    }
+
+    .music-holder {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: -30px;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+    }
+
+    .music-holder iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    button {
+        background: transparentize($black, 0.9);
+        width: 40px;
+        height: 40px;
+        line-height: 37px;
+        font-size: 18px;
+        font-size: calc-rem-value(18);
+        color: $theme-primary-color;
+        border: 1px solid #e6e6e6;
+        outline: 0;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @include rounded-border();
+        @include media-query(991px) {
+            right: auto;
+            left: 0;
+        }
+    }
+}
+
+.music-box .toggle-music-box {
+    top: -50px;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*** scrollbar style for chrome ***/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $theme-primary-color;
+    @include rounded-border(5px);
+}
+
+/*** spirit-header ***/
+.spirit-header {
+    position: relative;
+    z-index: 100;
+}
+
+.ripple,
+.particleground,
+.video-player,
+.surface-shader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.video-player:before {
+    content: "";
+    @include overlay(transparentize($theme-primary-color, 0.5));
+    z-index: 100;
+}

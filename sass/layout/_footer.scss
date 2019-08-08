@@ -1,0 +1,140 @@
+/*--------------------------------------------------------------
+#0.5	footer
+--------------------------------------------------------------*/
+.site-footer {
+	@include background-style("../images/footer-bg.jpg", center center, cover, no-repeat, local);
+	text-align: center;
+	color: $white;
+	padding: 160px 0;
+	position: relative;
+
+	@include media-query(1199px) {
+		padding: 110px 0;
+	}
+
+	@include media-query(991px) {
+		padding: 90px 0;
+	}
+
+	@include media-query(767px) {
+		padding: 70px 0;
+	}
+
+	&:before {
+		content: "";
+		@include overlay(transparentize($black, 0.4));
+	}
+
+	h2 {
+		font-family: $heading-font;
+		font-size: 67px;
+		font-size: calc-rem-value(67);
+		color: $white;
+		margin: 0 0 0.3em;
+		padding: 0 250px;
+		text-transform: capitalize;
+		letter-spacing: 5px;
+
+		@include media-query(1199px) {
+			font-size: 55px;
+			font-size: calc-rem-value(55);
+			padding: 0 200px;
+		}
+
+		@include media-query(991px) {
+			font-size: 45px;
+			font-size: calc-rem-value(45);
+			padding: 0;
+		}
+
+		@include media-query(767px) {
+			font-size: 35px;
+			font-size: calc-rem-value(35);
+			letter-spacing: 2px;
+		}
+	}
+
+	h2 + span {
+		@include media-query(767px) {
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+		}
+	}
+
+	.back-to-top {
+		position: absolute;
+		left: 50%;
+		top: -25px;
+		@include translatingX();
+
+		a {
+			display: inline-block;
+		    background: $white;
+		    width: 50px;
+		    height: 50px;
+		    @include rounded-border();
+
+		    span {
+		    	position: absolute;
+		    	left: 0;
+		    	-webkit-animation: pointerMoving 1.3s infinite;
+		    	animation: pointerMoving 1.3s infinite;
+		    }
+		}
+
+		.fi {
+			display: inline-block;
+			-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+			position: absolute;
+			top: 0;
+			left: 11px;
+		}
+
+		.fi:before {
+			font-size: 27px;
+			color: $black;
+			text-shadow: 1px 1px 2px $black;
+		}
+	}
+}
+
+@-webkit-keyframes pointerMoving {
+	0% {
+		-webkit-transform: translateY(5px);
+		transform: translateY(5px);
+		opacity: 0.5;
+	}
+
+	80% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
+		opacity: 1;
+	}
+
+	100% {
+		-webkit-transform: translateY(5px);
+		transform: translateY(5px);
+		opacity: 0.5;
+	}
+}
+
+@keyframes pointerMoving {
+	0% {
+		-webkit-transform: translateY(5px);
+		transform: translateY(5px);
+		opacity: 0.5;
+	}
+
+	80% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
+		opacity: 1;
+	}
+
+	100% {
+		-webkit-transform: translateY(5px);
+		transform: translateY(5px);
+		opacity: 0.5;
+	}
+}

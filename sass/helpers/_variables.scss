@@ -1,0 +1,24 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,600,700|Great+Vibes');
+
+// fonts
+$base-font: 'Dosis', sans-serif;
+$heading-font: 'Great Vibes', cursive;
+
+$base-font-size: 18;
+
+// color
+$dark-gray: #6e6e6e;
+$lighter-gray: #f9f9f9;
+$gray3: #767878;
+$white: #fff;
+$black: #000;
+$green: #5e9a8e;
+
+$theme-primary-color: $green;
+$body-bg-color: $white;
+$section-bg-color: $lighter-gray;
+$text-color: $gray3;
+$heading-color: $dark-gray;

@@ -1,0 +1,21 @@
+.theme-btn {
+	background-color: $theme-primary-color;
+	line-height: 0.66em;
+	color: $white;
+	padding: 15px;
+	border: 0;
+	@include rounded-border(0);
+	text-transform: uppercase;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: darken($theme-primary-color, 5%);
+		color: $white;
+	}
+
+	@include media-query(767px) {
+		padding: 12px;
+		font-size: 13px;
+	}
+}

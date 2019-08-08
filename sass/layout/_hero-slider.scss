@@ -1,0 +1,379 @@
+/*--------------------------------------------------------------
+#0.4	hero slider
+--------------------------------------------------------------*/
+.hero {
+	position: relative;
+	height: calc(100vh - 90px);
+	min-height: 700px;
+	overflow: hidden;
+
+	@include media-query(1199px) {
+		min-height: 600px;
+	}
+
+	@include media-query(991px) {
+		min-height: 500px;
+	}
+
+	.slide-item {
+		height: 100vh;
+		min-height: 700px;
+		position: relative;
+
+		@include media-query(1199px) {
+			min-height: 600px;
+		}
+
+		@include media-query(991px) {
+			min-height: 500px;
+		}
+
+		background-repeat: no-repeat;
+		position: relative;
+
+		.slider-bg {
+			display: none;
+		}
+
+		&:before {
+			content: "";
+			@include overlay(transparentize($black, 0.7));
+		}
+	}
+
+	.slide-item:focus {
+		outline: none;
+	}
+
+	.slide-item .container {
+		height: 100%;
+		display: table;
+	}
+
+	.slide-item .row {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+
+	/** slider controls **/
+	.slick-prev,
+	.slick-next {
+		background-color: transparentize($theme-primary-color, 0.4);
+		width: 50px;
+		height: 50px;
+		z-index: 111;
+		@include rounded-border();
+		box-shadow: 0 0 0 5px transparentize($theme-primary-color, 0.1);
+		opacity: 0;
+		@include transition-time(0.3s);
+
+		&:hover {
+			background-color: transparentize($theme-primary-color, 0.2);
+			box-shadow: 0 0 0 5px $theme-primary-color;
+		}
+
+		@include media-query(1199px) {
+			width: 45px;
+			height: 45px;
+			box-shadow: 0 0 0 3px transparentize($theme-primary-color, 0.1);
+		}
+
+		@include media-query(991px) {
+			width: 35px;
+			height: 35px;
+			box-shadow: 0 0 0 3px transparentize($theme-primary-color, 0.1);
+		}
+
+		&:before {
+			font-size: 25px;
+			font-size: calc-rem-value(25px);
+
+			@include media-query(991px) {
+				font-size: 20px;
+				font-size: calc-rem-value(20px);
+			}
+		}
+
+	}
+
+	.slick-prev {
+		left: 0;
+
+		&:before {
+			font-family: "FontAwesome";
+			content: "\f104";
+			opacity: 1;
+		}
+	}
+
+	.slick-next {
+		right: 0;
+
+		&:before {
+			font-family: "FontAwesome";
+			content: "\f105";
+			opacity: 1;
+		}
+	}
+
+	/*** arrow hover ***/
+	&:hover .slick-prev,
+	&:hover .slick-next {
+		opacity: 1;
+	} 
+
+	&:hover .slick-prev {
+		left: 20px;
+	}
+
+	&:hover .slick-next {
+		right: 20px;
+	}
+}
+
+.hero .wedding-announcement {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 101;
+	text-align: center;
+	display: table;
+
+	.couple-name-merried-text {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.couple-name-merried-text h2 {
+	    font-family: $heading-font;
+		font-size: 90px;
+		font-size: calc-rem-value(90);
+		color: $white;
+		margin: 0 0 0.4em;
+		position: relative;
+		z-index: 10;
+
+		@include media-query(1199px) {
+			font-size: 70px;
+			font-size: calc-rem-value(70);
+		}
+
+		@include media-query(991px) {
+			font-size: 55px;
+			font-size: calc-rem-value(55);
+		}
+	}
+
+	.married-text h4 {
+		font-size: 26px;
+		font-size: calc-rem-value(26);
+		color: $white;
+		text-transform: uppercase;
+		margin: 0;
+		display: inline;
+		border-top: 1px solid $white;
+		border-bottom: 1px solid $white;
+		padding: 12px 20px;
+		position: relative;
+		z-index: 10;
+		letter-spacing: 2px;
+
+		@include media-query(1199px) {
+			font-size: 20px;
+			font-size: calc-rem-value(20);
+			padding: 8px 18px;
+		}
+
+		@include media-query(991px) {
+			font-size: 17px;
+			font-size: calc-rem-value(17);
+			padding: 8px 14px;
+		}
+
+		@include media-query(767px) {
+			letter-spacing: 1px;
+		}
+	}
+
+	.couple-name-merried-text h2,
+	.married-text h4 {
+		text-shadow: 1px 1px 2px transparentize($black, 0.4);
+	}
+
+	.couple-name-merried-text i {
+		font-size: 450px;
+	    color: transparentize($theme-primary-color, 0.3);
+	    position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    @include center-by-translating();
+	}
+
+	/*** save the date ***/
+	.save-the-date {
+		width: 350px;
+		height: 350px;
+		position: absolute;
+		left: 50%;
+		bottom: -350px;
+		@include translatingX();
+		@include rounded-border();
+		opacity: 0;
+		-webkit-transition: 1s 2.3s ease-in-out;
+		transition: 1s 2.3s ease-in-out;
+
+		@include media-query(1199px) {
+			width: 300px;
+			height: 300px;
+		}
+
+		@include media-query(991px) {
+			width: 270px;
+			height: 270px;
+		}
+
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			@include rounded-border();
+			z-index: -1;
+		}
+
+		&:before {
+			background-color: transparentize($theme-primary-color, 0.7);
+			width: 110%;
+			height: 110%;
+			left: -5%;
+			top: -5%;
+			-webkit-animation: save-the-date-pulse 1s infinite;
+			animation: save-the-date-pulse 1s infinite;
+
+			@include media-query(1199px) {
+				width: 108%;
+				height: 108%;
+				left: -4%;
+				top: -4%;
+			}
+		}
+
+		&:after {
+			background-color: transparentize($theme-primary-color, 0.3);
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+		}
+
+		h4 {
+		    font-family: $heading-font;
+			font-size: 40px;
+			font-size: calc-rem-value(40);
+			color: $white;
+			margin: 55px 0 0.2em;
+			text-shadow: 1px 1px 2px transparentize($black, 0.4);
+
+			@include media-query(1199px) {
+				font-size: 35px;
+				font-size: calc-rem-value(35);
+				margin: 45px 0 0.15em;
+			}
+
+			@include media-query(991px) {
+				font-size: 28px;
+				font-size: calc-rem-value(28);
+				margin: 30px 0 0.15em;
+			}
+		}
+
+		.date {
+			font-size: 20px;
+			font-size: calc-rem-value(20);
+			color: $white;
+			text-shadow: 1px 1px 2px transparentize($black, 0.4);
+
+			@include media-query(1199px) {
+				font-size: 18px;
+				font-size: calc-rem-value(18);
+			}
+
+			@include media-query(991px) {
+				font-size: 16px;
+				font-size: calc-rem-value(16);
+			}
+		}
+	}
+
+	/*** popup save the date circle ***/
+	.popup-save-the-date {
+		bottom: -185px;
+		opacity: 1;
+		z-index: 50;
+
+		@include media-query(1199px) {
+			bottom: -180px;
+		}
+
+		@include media-query(991px) {
+			bottom: -170px;
+		}
+	}
+
+	@-webkit-keyframes save-the-date-pulse {
+		from {
+			-webkit-transform: scale3d(1, 1, 1);
+			transform: scale3d(1, 1, 1);
+		}
+
+		50% {
+			-webkit-transform: scale3d(0.95, 0.95, 0.95);
+			transform: scale3d(0.95, 0.95, 0.95);
+		}
+
+		to {
+			-webkit-transform: scale3d(1, 1, 1);
+			transform: scale3d(1, 1, 1);
+		}
+	}
+
+	@keyframes save-the-date-pulse {
+		from {
+			-webkit-transform: scale3d(1, 1, 1);
+			transform: scale3d(1, 1, 1);
+		}
+
+		50% {
+			-webkit-transform: scale3d(0.95, 0.95, 0.95);
+			transform: scale3d(0.95, 0.95, 0.95);
+		}
+
+		to {
+			-webkit-transform: scale3d(1, 1, 1);
+			transform: scale3d(1, 1, 1);
+		}
+	}
+}
+
+
+.static-hero {
+	@include background-style("../images/slider/slide-1.jpg", center center, cover, no-repeat, local);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 50;
+
+	&:before {
+		content: "";
+		@include overlay(transparentize($black, 0.7));
+	}
+}
+
+.home-shade .static-hero {
+	opacity: 0.4;
+	z-index: 101;
+}

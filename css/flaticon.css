@@ -1,0 +1,52 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 29/08/2017 08:28
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-arrows-3:before { content: "\f100"; }
+.flaticon-up-arrow-1:before { content: "\f101"; }
+.flaticon-arrows-2:before { content: "\f102"; }
+.flaticon-arrows-1:before { content: "\f103"; }
+.flaticon-arrow-1:before { content: "\f104"; }
+.flaticon-arrows:before { content: "\f105"; }
+.flaticon-arrow:before { content: "\f106"; }
+.flaticon-indian-arrow-with-heart-shape:before { content: "\f107"; }
+.flaticon-cupid:before { content: "\f108"; }
+.flaticon-heart-direction-up:before { content: "\f109"; }
+.flaticon-up-arrow:before { content: "\f10a"; }
+.flaticon-shape-1:before { content: "\f10b"; }
+.flaticon-two:before { content: "\f10c"; }
+.flaticon-shapes-2:before { content: "\f10d"; }
+.flaticon-shapes-1:before { content: "\f10e"; }
+.flaticon-shapes:before { content: "\f10f"; }
+.flaticon-shape:before { content: "\f110"; }
+.flaticon-heart-black-shape-for-love:before { content: "\f111"; }
+.flaticon-hearts-outline-icon:before { content: "\f112"; }
+.flaticon-favorite-heart-button:before { content: "\f113"; }
+.flaticon-heart:before { content: "\f114"; }
