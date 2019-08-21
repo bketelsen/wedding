@@ -262,7 +262,7 @@ a:focus {
   line-height: 37px;
   font-size: 18px;
   font-size: 1rem;
-  color: #5e9a8e;
+  color: #879BAF;
   border: 1px solid #e6e6e6;
   outline: 0;
   padding: 0;
@@ -300,7 +300,7 @@ a:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #5e9a8e;
+  background-color: #879BAF;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
@@ -328,7 +328,7 @@ a:focus {
 
 .video-player:before {
   content: "";
-  background-color: rgba(94, 154, 142, 0.5);
+  background-color: rgba(135,155,175, 0.5);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -373,7 +373,7 @@ a:focus {
 }
 
 .section-title .vertical-line span, .section-title-white .vertical-line span {
-  background: rgba(94, 154, 142, 0.2);
+  background: rgba(135,155,175, 0.2);
   width: 2px;
   height: 42px;
   top: 17px;
@@ -409,7 +409,7 @@ a:focus {
   margin: 0;
   font-size: 65px;
   font-size: 3.61111rem;
-  color: #5e9a8e;
+  color: #879BAF;
   opacity: 0.6;
 }
 
@@ -422,7 +422,7 @@ a:focus {
 
 .section-title .vertical-line:before, .section-title-white .vertical-line:before {
   content: "";
-  background: rgba(94, 154, 142, 0.2);
+  background: rgba(135,155,175, 0.2);
   width: 45px;
   height: 2px;
   top: 16px;
@@ -444,14 +444,14 @@ a:focus {
 
 .section-title h2, .section-title-white h2 {
   font-family: "Great Vibes", cursive;
-  background-color: rgba(94, 154, 142, 0.1);
+  background-color: rgba(135,155,175, 0.1);
   font-size: 46px;
   font-size: 2.55556rem;
   color: #848383;
   margin: 59px 0 0;
   padding: 10px 25px 5px;
-  border-top: 2px solid rgba(94, 154, 142, 0.1);
-  border-bottom: 2px solid rgba(94, 154, 142, 0.1);
+  border-top: 2px solid rgba(135,155,175, 0.1);
+  border-bottom: 2px solid rgba(135,155,175, 0.1);
   display: inline-block;
   text-transform: capitalize;
   letter-spacing: 3px;
@@ -514,7 +514,7 @@ a:focus {
 }
 
 .theme-btn {
-  background-color: #5e9a8e;
+  background-color: #879BAF;
   line-height: 0.66em;
   color: #fff;
   padding: 15px;
@@ -553,7 +553,7 @@ a:focus {
 .form input:focus,
 .form textarea:focus,
 .form select:focus {
-  border-color: #5e9a8e;
+  border-color: #879BAF;
   -webkit-box-shadow: 0 0 5px 0 #7cafa5;
   -moz-box-shadow: 0 0 5px 0 #7cafa5;
   -o-box-shadow: 0 0 5px 0 #7cafa5;
@@ -615,7 +615,7 @@ a:focus {
 }
 
 .social-links li a:hover {
-  background-color: #5e9a8e;
+  background-color: #879BAF;
 }
 
 .page-title {
@@ -694,7 +694,7 @@ a:focus {
 .page-title .breadcrumb ul li {
   font-size: 18px;
   font-size: 1rem;
-  color: #5e9a8e;
+  color: #879BAF;
   float: left;
   position: relative;
 }
@@ -762,7 +762,7 @@ a:focus {
   left: 0;
   top: 0;
   border: 5px solid #f1f1f1;
-  border-top: 5px solid #5e9a8e;
+  border-top: 5px solid #879BAF;
   border-radius: 50%;
   -webkit-animation: rotating 1s linear infinite;
   animation: rotating 1s linear infinite;
@@ -782,7 +782,7 @@ a:focus {
 .preloader .icon i:before {
   font-size: 55px;
   font-size: 3.05556rem;
-  color: #5e9a8e;
+  color: #879BAF;
 }
 
 @-webkit-keyframes rotating {
@@ -919,11 +919,11 @@ a:focus {
 }
 
 .blog-sidebar .categories-widget ul li a:hover:before {
-  color: #5e9a8e;
+  color: #879BAF;
 }
 
 .blog-sidebar .categories-widget ul li a:hover {
-  color: #5e9a8e;
+  color: #879BAF;
 }
 
 .blog-sidebar .popular-posts-widget li {
@@ -939,7 +939,7 @@ a:focus {
   font-size: 16px;
   font-size: 0.88889rem;
   font-weight: 600;
-  color: #5e9a8e;
+  color: #879BAF;
   display: inline-block;
   margin-bottom: 5px;
 }
@@ -968,7 +968,7 @@ a:focus {
 }
 
 .blog-sidebar .populer-tags-widget ul li a {
-  background-color: rgba(94, 154, 142, 0.1);
+  background-color: rgba(135,155,175, 0.1);
   display: block;
   font-size: 13px;
   font-size: 0.72222rem;
@@ -976,7 +976,7 @@ a:focus {
   text-align: center;
   text-transform: uppercase;
   padding: 5px 10px 5px 25px;
-  border: 1px solid rgba(94, 154, 142, 0.2);
+  border: 1px solid rgba(135,155,175, 0.2);
   margin: 0 5px 5px 0;
   position: relative;
 }
@@ -985,7 +985,7 @@ a:focus {
   font-family: FontAwesome;
   content: "\f02b";
   font-size: 13px;
-  color: rgba(94, 154, 142, 0.3);
+  color: rgba(135,155,175, 0.3);
   position: absolute;
   left: 10px;
   top: 50%;
@@ -1002,9 +1002,9 @@ a:focus {
 }
 
 .blog-sidebar .populer-tags-widget ul li a:hover {
-  background-color: #5e9a8e;
+  background-color: #879BAF;
   color: #fff;
-  border-color: #5e9a8e;
+  border-color: #879BAF;
 }
 
 .blog-sidebar .populer-tags-widget ul li a:hover:before {
@@ -1031,7 +1031,7 @@ a:focus {
   text-align: center;
   color: #565656;
   border-radius: 0;
-  border: 1px solid #5e9a8e;
+  border: 1px solid #879BAF;
   padding: 0;
   margin: 2px;
   position: relative;
@@ -1068,7 +1068,7 @@ a:focus {
 .page-pagination .pagination li a:hover,
 .page-pagination .pagination li a:focus,
 .page-pagination .pagination li.current a {
-  background-color: #5e9a8e;
+  background-color: #879BAF;
   color: #fff;
 }
 
@@ -1107,7 +1107,7 @@ a:focus {
 
 .site-header #navbar > ul li a:hover {
   text-decoration: none;
-  color: #5e9a8e;
+  color: #879BAF;
 }
 
 @media screen and (min-width: 992px) {
@@ -1124,7 +1124,7 @@ a:focus {
   .site-header #navbar > ul .sub-menu {
     background-color: #fff;
     width: 220px;
-    border-top: 2px solid #5e9a8e;
+    border-top: 2px solid #879BAF;
     position: absolute;
     left: 0;
     top: 130%;
@@ -1227,7 +1227,7 @@ a:focus {
   .site-header #navbar .half-mega-menu {
     background-color: #fff;
     padding: 20px;
-    border-top: 2px solid #5e9a8e;
+    border-top: 2px solid #879BAF;
     position: absolute;
     right: 0;
     top: 120%;
@@ -1327,7 +1327,7 @@ a:focus {
     width: 100%;
   }
   .site-header .navbar-header button {
-    background-color: #5e9a8e;
+    background-color: #879BAF;
     width: 40px;
     height: 35px;
     border: 0;
@@ -1371,14 +1371,14 @@ a:focus {
   }
   .site-header #navbar ul a:hover,
   .site-header #navbar ul li.current a {
-    color: #5e9a8e;
+    color: #879BAF;
   }
   .site-header #navbar .navbar-nav {
     height: 100%;
     overflow: auto;
   }
   .site-header #navbar .close-navbar {
-    background-color: #5e9a8e;
+    background-color: #879BAF;
     width: 35px;
     height: 35px;
     color: #fff;
@@ -1478,7 +1478,7 @@ a:focus {
 }
 
 .header-style-1 .couple-logo a, .header-style-2 .couple-logo a {
-  color: #5e9a8e;
+  color: #879BAF;
 }
 
 .header-style-1 .navigation, .header-style-2 .navigation {
@@ -1503,7 +1503,7 @@ a:focus {
 .header-style-1 #navbar ul li.current-menu-item > a, .header-style-2 #navbar ul li.current-menu-item > a,
 .header-style-1 #navbar ul > li.current-menu-ancestor li.current-menu-item > a, .header-style-2 #navbar ul > li.current-menu-ancestor li.current-menu-item > a,
 .header-style-1 #navbar ul > li.current-menu-ancestor > a, .header-style-2 #navbar ul > li.current-menu-ancestor > a {
-  color: #5e9a8e;
+  color: #879BAF;
 }
 
 @media screen and (min-width: 992px) {
@@ -1526,7 +1526,7 @@ a:focus {
     padding: 10px 15px;
   }
   .header-style-1 #navbar > ul > li .sub-menu a:hover, .header-style-2 #navbar > ul > li .sub-menu a:hover {
-    color: #5e9a8e;
+    color: #879BAF;
   }
   .header-style-1 #navbar > ul > li:last-child > ul, .header-style-2 #navbar > ul > li:last-child > ul {
     left: auto;
@@ -1620,7 +1620,7 @@ a:focus {
 
 .hero .slick-prev,
 .hero .slick-next {
-  background-color: rgba(94, 154, 142, 0.6);
+  background-color: rgba(135,155,175, 0.6);
   width: 50px;
   height: 50px;
   z-index: 111;
@@ -1629,8 +1629,8 @@ a:focus {
   -o-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 5px rgba(94, 154, 142, 0.9);
-  box-shadow: 0 0 0 5px rgba(94, 154, 142, 0.9);
+  -webkit-box-shadow: 0 0 0 5px rgba(135,155,175, 0.9);
+  box-shadow: 0 0 0 5px rgba(135,155,175, 0.9);
   opacity: 0;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -1641,9 +1641,9 @@ a:focus {
 
 .hero .slick-prev:hover,
 .hero .slick-next:hover {
-  background-color: rgba(94, 154, 142, 0.8);
-  -webkit-box-shadow: 0 0 0 5px #5e9a8e;
-  box-shadow: 0 0 0 5px #5e9a8e;
+  background-color: rgba(135,155,175, 0.8);
+  -webkit-box-shadow: 0 0 0 5px #879BAF;
+  box-shadow: 0 0 0 5px #879BAF;
 }
 
 @media (max-width: 1199px) {
@@ -1651,8 +1651,8 @@ a:focus {
   .hero .slick-next {
     width: 45px;
     height: 45px;
-    -webkit-box-shadow: 0 0 0 3px rgba(94, 154, 142, 0.9);
-    box-shadow: 0 0 0 3px rgba(94, 154, 142, 0.9);
+    -webkit-box-shadow: 0 0 0 3px rgba(135,155,175, 0.9);
+    box-shadow: 0 0 0 3px rgba(135,155,175, 0.9);
   }
 }
 
@@ -1661,8 +1661,8 @@ a:focus {
   .hero .slick-next {
     width: 35px;
     height: 35px;
-    -webkit-box-shadow: 0 0 0 3px rgba(94, 154, 142, 0.9);
-    box-shadow: 0 0 0 3px rgba(94, 154, 142, 0.9);
+    -webkit-box-shadow: 0 0 0 3px rgba(135,155,175, 0.9);
+    box-shadow: 0 0 0 3px rgba(135,155,175, 0.9);
   }
 }
 
@@ -1799,7 +1799,7 @@ a:focus {
 
 .hero .wedding-announcement .couple-name-merried-text i {
   font-size: 450px;
-  color: rgba(94, 154, 142, 0.7);
+  color: rgba(135,155,175, 0.7);
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1858,7 +1858,7 @@ a:focus {
 }
 
 .hero .wedding-announcement .save-the-date:before {
-  background-color: rgba(94, 154, 142, 0.3);
+  background-color: rgba(135,155,175, 0.3);
   width: 110%;
   height: 110%;
   left: -5%;
@@ -1877,7 +1877,7 @@ a:focus {
 }
 
 .hero .wedding-announcement .save-the-date:after {
-  background-color: rgba(94, 154, 142, 0.7);
+  background-color: rgba(135,155,175, 0.7);
   width: 100%;
   height: 100%;
   left: 0;
@@ -2227,7 +2227,7 @@ a:focus {
 }
 
 .wedding-couple-section .details {
-  background-color: rgba(94, 154, 142, 0.05);
+  background-color: rgba(135,155,175, 0.05);
   padding: 50px 55px;
 }
 
@@ -2345,7 +2345,7 @@ a:focus {
 }
 
 .wedding-couple-section .details .social-links a:hover {
-  background-color: #5e9a8e;
+  background-color: #879BAF;
 }
 
 @media screen and (min-width: 992px) {
@@ -2451,7 +2451,7 @@ a:focus {
 }
 
 .count-down-section #clock {
-  color: #5e9a8e;
+  color: #879BAF;
   overflow: hidden;
 }
 
@@ -2527,7 +2527,7 @@ a:focus {
 
 .story-section .story-timeline:after {
   content: "";
-  background: rgba(94, 154, 142, 0.1);
+  background: rgba(135,155,175, 0.1);
   width: 2px;
   height: 100%;
   position: absolute;
@@ -2551,7 +2551,7 @@ a:focus {
 }
 
 .story-section .story-timeline > .row .horizontal-line {
-  background: rgba(94, 154, 142, 0.1);
+  background: rgba(135,155,175, 0.1);
   width: 70%;
   height: 1px;
   position: absolute;
@@ -2609,7 +2609,7 @@ a:focus {
 
 @media (max-width: 991px) {
   .story-section .story-timeline .story-text {
-    background: rgba(94, 154, 142, 0.05);
+    background: rgba(135,155,175, 0.05);
     padding: 35px 25px;
   }
 }
@@ -2621,7 +2621,7 @@ a:focus {
 }
 
 .story-section .story-timeline .text-holder {
-  border-top: 1px solid rgba(94, 154, 142, 0.1);
+  border-top: 1px solid rgba(135,155,175, 0.1);
   padding-top: 45px !important;
   position: relative;
 }
@@ -2639,7 +2639,7 @@ a:focus {
   height: 43px;
   line-height: 41px;
   text-align: center;
-  border: 2px solid rgba(94, 154, 142, 0.5);
+  border: 2px solid rgba(135,155,175, 0.5);
   position: absolute;
   left: -22px;
   top: -22px;
@@ -2670,7 +2670,7 @@ a:focus {
   font-size: 22px;
   font-size: 1.22222rem;
   font-weight: 600;
-  color: #5e9a8e;
+  color: #879BAF;
   margin: 0 0 0.5em;
   text-transform: uppercase;
 }
@@ -2730,7 +2730,7 @@ a:focus {
 }
 
 .story-section .video-holder .video-play-btn i {
-  color: #5e9a8e;
+  color: #879BAF;
 }
 
 .story-section .story-timeline .story-slider .owl-controls {
@@ -2888,7 +2888,7 @@ a:focus {
 }
 
 .events-section .event ul li i {
-  color: #5e9a8e;
+  color: #879BAF;
   position: absolute;
   left: 0;
   top: 3px;
@@ -2900,7 +2900,7 @@ a:focus {
 
 .events-section .event .see-location-btn {
   font-weight: 600;
-  color: #5e9a8e;
+  color: #879BAF;
   display: inline-block;
   margin-top: 5px;
 }
@@ -2940,7 +2940,7 @@ a:focus {
 }
 
 .inportant-people-section .tablist ul li a {
-  background: rgba(94, 154, 142, 0.15);
+  background: rgba(135,155,175, 0.15);
   display: block;
   color: #3e3e3e;
   font-weight: 600;
@@ -2955,7 +2955,7 @@ a:focus {
 }
 
 .inportant-people-section .tablist ul .active a {
-  background-color: #5e9a8e;
+  background-color: #879BAF;
   color: #fff;
 }
 
@@ -3073,7 +3073,7 @@ a:focus {
 }
 
 .inportant-people-section .grid:hover .details {
-  background-color: rgba(94, 154, 142, 0.05);
+  background-color: rgba(135,155,175, 0.05);
 }
 
 .inportant-people-section .grid .details h3 {
@@ -3137,7 +3137,7 @@ a:focus {
 
 .inportant-people-section .grid .social-links li a:hover {
   background-color: transparent;
-  color: #5e9a8e;
+  color: #879BAF;
 }
 
 /*--------------------------------------------------------------
@@ -3185,7 +3185,7 @@ a:focus {
 }
 
 .gallery-section .gallery-filters ul .current {
-  color: #5e9a8e;
+  color: #879BAF;
 }
 
 .gallery-section .masonry-gallery {
@@ -3271,7 +3271,7 @@ a:focus {
   line-height: 47px;
   font-size: 20px;
   font-size: 1.11111rem;
-  background: rgba(94, 154, 142, 0.9);
+  background: rgba(135,155,175, 0.9);
   border: 3px solid #5c978b;
   color: #fff;
   text-align: center;
@@ -3296,7 +3296,7 @@ a:focus {
 }
 
 .gallery-section .video-play-btn:hover i {
-  background: #5e9a8e;
+  background: #879BAF;
 }
 
 /*--------------------------------------------------------------
@@ -3402,7 +3402,7 @@ a:focus {
 }
 
 .rsvp-section .form .submit-btn button {
-  background-color: #5e9a8e;
+  background-color: #879BAF;
   height: 45px;
   line-height: 45px;
   font-size: 16px;
@@ -3446,7 +3446,7 @@ a:focus {
 #1.4	getting-there-section
 --------------------------------------------------------------*/
 .getting-there-section {
-  background-color: #5e9a8e;
+  background-color: #879BAF;
 }
 
 .getting-there-section .content h3,
@@ -3561,7 +3561,7 @@ a:focus {
 }
 
 .blog-main .entry-date {
-  background-color: rgba(94, 154, 142, 0.5);
+  background-color: rgba(135,155,175, 0.5);
   width: 60px;
   font-size: 30px;
   color: #fff;
@@ -3573,7 +3573,7 @@ a:focus {
 }
 
 .blog-main .entry-date span {
-  background-color: #5e9a8e;
+  background-color: #879BAF;
   font-size: 12px;
   font-size: 0.66667rem;
   color: #fff;
@@ -3618,7 +3618,7 @@ a:focus {
 .blog-main .entry-meta i {
   font-size: 16px;
   font-size: 0.88889rem;
-  color: #5e9a8e;
+  color: #879BAF;
 }
 
 @media (max-width: 767px) {
@@ -3655,7 +3655,7 @@ a:focus {
 }
 
 .blog-main .entry-title a:hover {
-  color: #5e9a8e;
+  color: #879BAF;
   text-decoration: none;
 }
 
@@ -3794,8 +3794,8 @@ a:focus {
 }
 
 .blog-details-content .tag-social-share .tag a:hover {
-  background-color: #5e9a8e;
-  border-color: #5e9a8e;
+  background-color: #879BAF;
+  border-color: #879BAF;
   color: #fff;
 }
 
@@ -3847,8 +3847,8 @@ a:focus {
 }
 
 .blog-details-content .tag-social-share .social-share .social-links a:hover {
-  background-color: #5e9a8e;
-  border-color: #5e9a8e;
+  background-color: #879BAF;
+  border-color: #879BAF;
   color: #fff;
 }
 
@@ -3988,7 +3988,7 @@ a:focus {
   font-size: 16px;
   font-size: 0.88889rem;
   font-weight: 600;
-  color: #5e9a8e;
+  color: #879BAF;
 }
 
 .blog-details-content .comments-area .review a:hover {
